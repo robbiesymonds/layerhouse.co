@@ -6,7 +6,7 @@ export const META = {
 export const MESSAGE_GROUPS = [
   [
     'Hey there! We are Layerhouse',
-    "We're sort of a digital consultancy, but really just<br />engineers with a love for details, design, etc."
+    "We're sort of a digital consultancy, but really just engineers with a love for details, design, etc."
   ],
   [
     "We're working on a bunch of stuff right now...",
@@ -14,7 +14,7 @@ export const MESSAGE_GROUPS = [
     "maybe that's you? 👉👈"
   ],
   [
-    'Anyway, drop us a line -> <a target="_blank" href="mailto:hello@layerhouse.co">hello@layerhouse.co</a>,<br />we\'ll try our best to respond quickly.',
+    'Anyway, drop us a line -> <a target="_blank" href="mailto:hello@layerhouse.co">hello@layerhouse.co</a>, we\'ll try our best to respond quickly.',
     'Have a good one! 🚀'
   ]
 ]
