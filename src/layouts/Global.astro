@@ -117,9 +117,15 @@ import '@fontsource/inter/400.css'
         font-size: 1rem;
         width: fit-content;
         line-height: 1.35;
-        transition: border-radius 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        position: relative;
         animation-fill-mode: forwards;
         animation: fade-in 1s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: default;
+
+        &:hover {
+          border-color: #303030;
+        }
 
         &:first-child:not(:last-child) {
           border-bottom-left-radius: 0.25rem;
@@ -154,6 +160,15 @@ import '@fontsource/inter/400.css'
             color: #cccccc;
           }
         }
+      }
+
+      .input {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
       }
 
       @keyframes slide-in {

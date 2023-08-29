@@ -9,10 +9,10 @@ type Timeline = {
   status: Status
 }[]
 
-const DELAY = 1000
+const DELAY = 900
 
 const generateTimeline = (groups: string[][]): Timeline => {
-  const shown = sessionStorage.getItem('seen') ? -1 : -1
+  const shown = sessionStorage.getItem('seen') ? 1 : -1
   const timeline: Timeline = []
 
   groups.forEach((group, i) => {
@@ -25,7 +25,7 @@ const generateTimeline = (groups: string[][]): Timeline => {
             shown
           } as Message)
       ),
-      status: Status.TYPING,
+      status: shown ? Status.SEEN : Status.TYPING,
       delay: i * (DELAY / 2),
       shown
     })
